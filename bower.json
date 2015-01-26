@@ -1,0 +1,24 @@
+{
+  "name": "Backbone Singleton",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ivanbanov/BackboneSilgetonBoilerplate",
+  "authors": [
+    "Ivan Banov <ivanbanov@gmail.com>"
+  ],
+  "description": "A singleton boilerplate for Backbone applications",
+  "main": "backbone-singleton.js",
+  "ignore": [
+    "node_modules/",
+    "bower_components/"
+  ],
+  "keywords": [
+    "backbone",
+    "boilerplate",
+    "singleton"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "backbone": "~1.1.2"
+  }
+}
