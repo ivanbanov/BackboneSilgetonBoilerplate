@@ -34,19 +34,25 @@ The App can append modules using the method setModule() wich recive three parame
 __Note:__ All the parameters are going to be camlized to avoid any crash in our modules files and standardization of the modules name.
 
 ```
+// ModelGallery = Backbone.Model.extend({});
 App.setModule("Model", "Gallery", {
     defaults: {}
-})
+});
 
-// or
-
-App.setModule("Collection", "Galleries", function() {
+// CollectionGallery = Backbone.Collection.extend({});
+App.setModule("Collection", "Gallery", function() {
     console.log(this); // App
 
     return {
         model: Gallery
     };
-})
+});
+```
+
+<br />To access the setted modules
+```
+App.Model.Gallery
+App.Collection.Gallery
 ```
 
 ## Using EventBus
