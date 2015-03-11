@@ -48,9 +48,11 @@
 
         // only use param obj if it is a 'object'
         // otherwise call as a function and get the returned obj
-        obj = (typeof obj === 'function') ? obj.call(App)
-            : (typeof obj === 'object')   ? obj
-            : {};
+        if (typeof obj === 'function') {
+            obj = obj.call(App);
+        } else if (typeof obj !== 'object') {
+            obj = {};
+        }
 
         // export app module based on backbone extends
         App[type][module] = Backbone[type].extend(obj);
