@@ -67,3 +67,7 @@ App.eventBus.on("anotherEvent", function(){
   // ...
 });
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ivanbanov/backbonesingleton/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
